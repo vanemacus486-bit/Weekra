@@ -31,6 +31,7 @@ jobs:
           flutter pub get
           flutter gen-l10n
           flutter create --platforms=android --project-name weekra .
+          bash tool/patch-branding.sh
           flutter build apk --debug --target tool/desktop_smoke_main.dart
 
       - name: Enable Android emulator acceleration

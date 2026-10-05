@@ -59,6 +59,9 @@ jobs:
       - name: Generate Android runner
         run: flutter create --platforms=android --project-name weekra --org app.weekra .
 
+      - name: Patch display name to Weekra
+        run: bash tool/patch-branding.sh
+
       - name: Build release APK
         run: flutter build apk --release
 

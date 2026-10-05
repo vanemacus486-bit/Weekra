@@ -34,6 +34,7 @@ jobs:
         shell: pwsh
         run: |
           flutter create . --platforms=windows
+          bash tool/patch-branding.sh
           flutter pub get
           flutter gen-l10n
           flutter build windows --release `

@@ -15,7 +15,7 @@ const _currentVersion = String.fromEnvironment(
 const _manifestUrl = String.fromEnvironment(
   'WEEKRA_UPDATE_MANIFEST_URL',
   defaultValue:
-      'https://github.com/vanemacus486-bit/weekra/releases/latest/download/update.json',
+      'https://github.com/vanemacus486-bit/Weekra/releases/latest/download/update.json',
 );
 
 class WindowsUpdateService implements UpdateService {

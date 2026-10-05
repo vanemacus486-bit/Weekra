@@ -76,6 +76,9 @@ jobs:
       - name: Generate Windows runner
         run: flutter create . --platforms=windows
 
+      - name: Patch display name to Weekra
+        run: bash tool/patch-branding.sh
+
       - name: Install dependencies
         run: flutter pub get
 
